@@ -52,6 +52,7 @@ class ESPBLEiBeacon {
   ESPBTUUID get_uuid() { return ESPBTUUID::from_raw(this->beacon_data_.proximity_uuid); }
 
  protected:
+  // See 'Artwork and Specifications' @ https://developer.apple.com/ibeacon/
   struct {
     uint8_t sub_type;
     uint8_t length;
